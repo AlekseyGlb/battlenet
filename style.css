@@ -82,15 +82,15 @@ body {
   border-radius: 5px;
   padding: 3px;
   background-color: #2c3038;
-  margin: 0px;
+  margin-left: 64%;
+  margin-bottom: 100px;
 }
 
 .searchicon {
   height: 25px;
   width: 25px;
-  display: inline-flex;
   margin: 0px;
-  padding: 0px;
+  padding-top: 5px;
 }
 
 .searchinput {
