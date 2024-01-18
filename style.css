@@ -20,11 +20,13 @@ body {
     font-family: Noto Sans, Helvetica, Arial, sans-serif;
 }
 
+/* header */
 .header {
     background-color: #15171e;
     color: #ffffff;
     padding-left: 150px;
-    padding-right: 150px;    
+    padding-right: 150px;  
+    padding-bottom: 25px;  
 }
 
 .header__top-block {
@@ -40,22 +42,9 @@ body {
     padding-right: 600px;
 }
 
-.logo {
-    color: #ffffff;
-    height: 72px;
-    width: 200px;
-}
-
-.logo img {
-    max-width: 100%;
-}
-
 .games-navigation {
     background-color: #2c3038;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    padding-right: 0px;
+    padding: 1px;
     border-radius: 5px;
 }
 
@@ -75,6 +64,41 @@ body {
 .options__link {
     text-decoration: none;
     color: currentColor;
+}
+
+.logo {
+    color: #ffffff;
+    height: 72px;
+    width: 200px;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+/* search */
+.search {
+  display: inline-flex;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: #2c3038;
+  margin: 0px;
+}
+
+.searchicon {
+  height: 25px;
+  width: 25px;
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.searchinput {
+  width: 300px;
+  height: 50px;
+  background-color: #2c3038;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* Dropdown Button */
