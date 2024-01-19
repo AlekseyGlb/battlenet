@@ -104,12 +104,25 @@ body {
 }
 
 .searchinput {
-  width: 300px;
+  width: 363px;
   height: 50px;
   background-color: #2c3038;
   padding: 0px;
   margin: 0px;
   border-style: none;
+}
+
+/* money */
+.money {
+  display: flex;
+  border-radius: 5px;
+  padding: 1px;
+  margin-left: 10px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: #2c3038;
+
 }
 
 /* Dropdown Button */
