@@ -15,25 +15,25 @@ a {
 }
 
 body {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Noto Sans, Helvetica, Arial, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Noto Sans, Helvetica, Arial, sans-serif;
 }
 
 /* header */
 .header {
-    background-color: #15171e;
-    color: #ffffff;
-    padding-left: 160px;
-    padding-right: 160px;  
-    padding-bottom: 25px;  
+  background-color: #15171e;
+  color: #ffffff;
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-bottom: 25px;
 }
 
 .header__top-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -70,78 +70,96 @@ body {
 
 /* Navigation */
 .header__navigation {
-    margin-top: 0px; 
-    padding-left: 0px; 
-    padding-right: 0px;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
+  width: 100%;
+  display: grid;
+  /*grid-template-areas: "browse search search balance";*/
+  /*grid-template-columns: 8.2fr 2.5fr .8fr;*/
+  grid-template-columns: 3fr 1fr .8fr;
+  grid-template-rows: 1fr;
+  gap: 8px
 }
 
 .games-navigation {
-    background-color: #2c3038;
-    padding: 1px;
-    border-radius: 5px;
-    justify-content: space-between;
-    display: flex;
-    padding-right: 400px;
+  background-color: #2c3038;
+  padding: 1px;
+  border-radius: 5px;
+  /*justify-content: space-between;*/
+  display: flex;
+  /*padding-right: 400px;*/
 }
 
 .options {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style: none;
-    color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  color: #ffffff;
 }
 
 .options__link {
-    text-decoration: none;
-    color: currentColor;
-    align-items: center;
+  text-decoration: none;
+  color: currentColor;
+  align-items: center;
 }
 
 .logo {
-    color: #ffffff;
-    height: 72px;
-    width: 200px;
+  color: #ffffff;
+  height: 72px;
+  width: 200px;
 }
 
 .logo img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /* search */
 .search {
   display: flex;
   border-radius: 5px;
-  padding-right: 4px;
   background-color: #2c3038;
-  margin-left: 10px;
-  justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  position: relative;
 }
 
-.searchlabel {
-  display: inline;
+.search-label {
+  padding-left: 12px;
 }
-.searchicon {
-  height: 20px;
-  width: 20px;
+
+.search-icon {
+  height: 24px;
+  max-width: 100%;
   vertical-align: middle;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.searchinput {
-  width: 363px;
-  height: 50px;
+.search-input {
+  padding: 16px 40px 16px 16px;
   background-color: #2c3038;
-  padding: 0px;
-  margin: 0px;
   border-style: none;
+  position: relative;
+}
+
+.search-icon:hover {
+  color: #ffffff;
+}
+
+.search-input::placeholder {
+  font-size: 16px;
+}
+
+.search-input:focus-visible {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.search-input:hover, .search:hover {
+  border-radius: 5px;
+  background-color: #b4bac5;
+}
+
+.search-label:hover {
+  cursor: pointer;
 }
 
 /* money */
@@ -165,53 +183,58 @@ body {
   font-size: 16px;
   border: none;
 }
+
 .dropbtn {
-    background-color: #2c3038;
-    color: rgb(255, 255, 255);
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #282f3d;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(2, 2, 2, 0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: rgb(255, 255, 255);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #393e49;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #343a47;}
-  .dropdown:hover .dropbtnacc {
-    background-color: #2c3038;
-    border-radius: 5px;
-  }
-  .search:hover {
-    background-color: #b4bac5;
-  }
+  background-color: #2c3038;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #282f3d;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(2, 2, 2, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #393e49;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #343a47;
+}
+
+.dropdown:hover .dropbtnacc {
+  background-color: #2c3038;
+  border-radius: 5px;
+}
 
 
 
