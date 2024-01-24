@@ -75,7 +75,7 @@ body {
   /*grid-template-areas: "browse search search balance";*/
   /* grid-template-columns: 8.2fr 2.5fr .8fr; */
   grid-template-columns: 900px 400px 285px;
-  /* grid-template-rows: 1fr; */
+  grid-template-rows: 1fr;
   gap: 8px
 }
 
