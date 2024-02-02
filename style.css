@@ -253,7 +253,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   /* grid-template-rows: repeat(2, 1fr); */
-  grid-auto-rows: minmax(100%, auto);
+  grid-auto-rows: minmax(auto, auto);
   /* grid-auto-columns: 500px; */
   gap: 25px;
 }
@@ -295,6 +295,12 @@ body {
   font-weight: bold;
   font-size: 16px;
   padding-left: 20px;
+  padding-bottom: 25px;
+  margin: 0px;
+}
+
+.price {
+  display: flex;
 }
 
 .card-item-btn:hover {
