@@ -257,7 +257,6 @@ body {
 }
 
 .card-item {
-
   padding: 0px;
   margin: 0px;
 }
@@ -265,6 +264,7 @@ body {
 .card-item-btn {
   margin: 0px;
   padding: 0px;
+  border: none;
 }
 
 .card-image {
@@ -285,7 +285,19 @@ body {
   
 }
 
+.card-item-btn:hover {
+  cursor: pointer;
+}
+
+.card-item-btn:hover .card-words {
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+
 /* Card-item1 */
+.card-item1 {
+  grid-column: 1 / 2;
+}
 
 .card-name1 {
   color: #cccccc;
@@ -322,19 +334,8 @@ body {
   font-size: 16px;
 }
 
-.card-item-btn:hover {
-  cursor: pointer;
-}
-
-.card-item-btn:hover .card-words {
-  transform: translateY(-5px);
-  transition: 0.5s;
-}
 
 
-.card-item1 {
-
-}
 
 /* Card-item2 */
 .card-item2 {
