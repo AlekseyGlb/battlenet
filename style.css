@@ -246,14 +246,16 @@ body {
 .content {
   margin: 0px;
   padding: 0px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .card {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 30px;
+  /* grid-template-rows: repeat(2, 1fr); */
+  grid-auto-rows: minmax(100%, auto);
+  /* grid-auto-columns: 500px; */
+  gap: 25px;
 }
 
 .card-item {
@@ -262,27 +264,37 @@ body {
 }
 
 .card-item-btn {
+  display: grid;
   margin: 0px;
   padding: 0px;
   border: none;
-}
-
-.card-image {
-  width: 300px;
-  max-width: 100%;
-  padding: 0px;
-  margin: 0px;
+  background-color: #23252b;
+  height: 100%;
 }
 
 .card-overview {
   text-align: start;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  background-color: #23252b;
   margin: 0px;
-  
+}
+
+.card-image {
+  width: 300px;
+  max-width: 100%; 
+  padding: 0px;
+  margin: 0px;
+}
+
+.card-words {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 25px;
+}
+
+.card-price {
+  color: #eeeeee;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 20px;
 }
 
 .card-item-btn:hover {
@@ -296,15 +308,15 @@ body {
 
 /* Card-item1 */
 .card-item1 {
-  grid-column: 1 / 2;
+  
 }
 
 .card-name1 {
   color: #cccccc;
   font-size: 12px;
   font-weight: bold;
-  margin-top: 25px;
   margin-bottom: 5px;
+  
 }
 
 .card-addon1 {
@@ -328,15 +340,6 @@ body {
   margin-top: 0px;
 }
 
-.card-price1 {
-  color: #eeeeee;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-
-
-
 /* Card-item2 */
 .card-item2 {
 
@@ -346,7 +349,6 @@ body {
   color: #cccccc;
   font-size: 12px;
   font-weight: bold;
-  margin-top: 25px;
   margin-bottom: 5px;
 }
 
@@ -362,12 +364,6 @@ body {
   color: #cccccc;
   font-size: 13px;
   margin-top: 0px;
-}
-
-.card-price2 {
-  color: #eeeeee;
-  font-weight: bold;
-  font-size: 16px;
 }
 
 /* card-item3 */
