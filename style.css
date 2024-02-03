@@ -251,7 +251,7 @@ body {
 .content {
   margin: 0px;
   padding: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .card {
@@ -282,6 +282,12 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: 50% 5%;
+}
+
+/* .pre-footer */
+.pre-footer > img {
+  width: 700px;
+  max-width: 100%;
 }
 
 
