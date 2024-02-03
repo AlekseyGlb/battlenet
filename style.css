@@ -242,6 +242,11 @@ body {
   border-radius: 5px;
 }
 
+/* .content-title */
+.content-title {
+  color: #f5f5f5;
+}
+
 /* Сontent - card */
 .content {
   margin: 0px;
@@ -249,304 +254,24 @@ body {
   margin-bottom: 20px;
 }
 
+.card > li {
+  background-color: #23252b;
+}
+
 .card {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 350px;
-  /* grid-auto-rows: minmax(450px, auto); */
-  /* grid-auto-columns: 500px; */
-  gap: 25px;
-  margin-bottom: 90px;
-}
-
-.card-item {
+  grid-template-rows: repeat(2, 450px);
+  gap: 20px;
+  color: #f5f5f5;
+  list-style: none;
   padding: 0px;
-  margin: 0px;
-}
-
-.card-item-btn {
-  display: grid;
-  grid-template-columns: 1fr;
-  /* grid-template-rows: 350px; */
-  grid-auto-rows: minmax(350px, auto);
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  background-color: #23252b;
-  height: 100%;
-}
-
-.card-overview {
-  text-align: start;
   margin: 0px;
 }
 
 .card-image {
   width: 300px;
-  max-width: 100%; 
-  padding: 0px;
-  margin: 0px;
+  max-width: 100%;
 }
-
-.card-words {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 25px;
-}
-
-.price {
-  text-align: left;
-  padding-top: 25px;
-  background-color: #23252b;
-  margin: 0px;
-}
-
-.card-price {
-  color: #eeeeee;
-  font-weight: bold;
-  font-size: 16px;
-  padding-left: 20px;
-  padding-bottom: 25px;
-  margin: 0px;
-}
-
-.card-item-btn:hover {
-  cursor: pointer;
-}
-
-.card-item-btn:hover .card-words {
-  transform: translateY(-5px);
-  transition: 0.5s;
-}
-
-/* Сontent - card */
-.card2 {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 25px;
-}
-
-/* Card-item1 */
-.card-item1 {
-  
-}
-
-.card-name1 {
-  color: #cccccc;
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  
-}
-
-.card-addon1 {
-  color: #eeeeee;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  margin-top: 0px;
-}
-
-.card-gold1 {
-  color: #f7bd00;
-  margin-top: 0px;
-  font-size: 15px;
-  margin-bottom: 5px;
-}
-
-.card-genre1 {
-  color: #cccccc;
-  font-size: 13px;
-  margin-top: 0px;
-}
-
-/* Card-item2 */
-.card-item2 {
-
-}
-
-.card-name2 {
-  color: #cccccc;
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.card-addon2 {
-  color: #eeeeee;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  margin-top: 0px;
-}
-
-.card-genre2 {
-  color: #cccccc;
-  font-size: 13px;
-  margin-top: 0px;
-}
-
-/* card-item3 */
-.card-item3 {
-
-}
-
-.card-name3 {
-  color: #cccccc;
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.card-addon3 {
-  color: #eeeeee;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  margin-top: 0px;
-}
-
-.card-genre3 {
-  color: #cccccc;
-  font-size: 13px;
-  margin-top: 0px;
-}
-
-/* .card-item4 */
-.card-item4 {
-}
-
-.card-name4 {
-  color: #cccccc;
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.card-addon4 {
-  color: #eeeeee;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  margin-top: 0px;
-}
-
-.card-genre4 {
-  color: #cccccc;
-  font-size: 13px;
-  margin-top: 0px;
-}
-
-/* Card-item5 */
-.card-item5 {
-
-}
-
-.card-name5 {
-  color: #cccccc;
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.card-addon5 {
-  color: #eeeeee;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  margin-top: 0px;
-}
-
-.card-gold5 {
-  color: #f7bd00;
-  margin-top: 0px;
-  font-size: 15px;
-  margin-bottom: 5px;
-}
-
-.card-genre5 {
-  color: #cccccc;
-  font-size: 13px;
-  margin-top: 0px;
-}
-
-/* Card-item6 */
-.card-item6 {
-
-}
-
-.card-name6 {
-  color: #cccccc;
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.card-addon6 {
-  color: #eeeeee;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  margin-top: 0px;
-}
-
-.card-gold6 {
-  color: #f7bd00;
-  margin-top: 0px;
-  font-size: 15px;
-  margin-bottom: 5px;
-}
-
-.card-genre6 {
-  color: #cccccc;
-  font-size: 13px;
-  margin-top: 0px;
-}
-
-/* Card-item7 */
-.card-item7 {
-
-}
-
-.card-name7 {
-  color: #cccccc;
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.card-addon7 {
-  color: #eeeeee;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  margin-top: 0px;
-}
-
-.card-gold7 {
-  color: #f7bd00;
-  margin-top: 0px;
-  font-size: 15px;
-  margin-bottom: 5px;
-}
-
-.card-genre7 {
-  color: #cccccc;
-  font-size: 13px;
-  margin-top: 0px;
-}
-
-.card-item8 {
-  background-color: rgb(0, 119, 255);
-}
-
-.card-item9 {
-  background-color: rgb(255, 0, 234);
-}
-
-.card-item10 {
-  background-color: rgb(60, 255, 0);
-}
-
 
 
