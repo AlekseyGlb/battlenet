@@ -263,15 +263,18 @@ body {
   list-style: none;
   padding: 0px;
   margin: 0px;
+  margin-bottom: 80px;
 }
 
 .card > li {
   background-color: #23252b;
+  border-radius: 5px;
 }
 
 .img-container {
   height: 170px;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .card-image {
