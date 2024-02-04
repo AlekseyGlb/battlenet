@@ -271,8 +271,14 @@ body {
   border-radius: 5px;
 }
 
+.card-li {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 170px, 1fr;
+  margin: 0;
+}
+
 .overview {
-  display: block;
   padding: 25px 30px 0px 20px;
   letter-spacing: 0.25px;
 }
