@@ -20,15 +20,14 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: Noto Sans, Helvetica, Arial, sans-serif;
-  padding-left: 150px;
-  padding-right: 175px;
   background-color: #15171e;
 }
 
 /* header */
 .header {
   background-color: #15171e;
-  padding-bottom: 25px;
+  padding-left: 150px;
+  padding-right: 175px;
 }
 
 .header__top-block {
@@ -73,13 +72,14 @@ body {
 
 /* Navigation */
 .header__navigation {
-  /* width: 100%; */
   display: grid;
-  /*grid-template-areas: "browse search search balance";*/
-  /* grid-template-columns: 8.2fr 2.5fr .8fr; */
-  grid-template-columns: 1000px 1fr 180px;
+  grid-template-columns: 5fr 2.68fr 1fr;
   grid-template-rows: 1fr;
   gap: 8px;
+  position: sticky;
+  top: 0;
+  background-color: #15171e;
+  padding: 15px 175px 15px 150px;
 }
 
 .games-navigation {
@@ -112,10 +112,11 @@ body {
 
 /* search */
 .search {
-  display: flex;
+  display: contents;
   border-radius: 5px;
   background-color: #23252b;
   flex-direction: row;
+  border-radius: 5px;
 }
 
 .search-label {
@@ -123,6 +124,8 @@ body {
   padding-left: 12px;
   width: 100%;
   height: 100%;
+  background-color: #23252b;
+  border-radius: 5px;
 }
 
 .search-icon {
@@ -137,6 +140,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
 
 .search-input::placeholder {
@@ -249,7 +253,7 @@ body {
 /* Сontent - card */
 .content {
   margin: 0px;
-  padding: 0px;
+  padding: 0px 175px 0 150px;
   margin-bottom: 50px;
 }
 
@@ -265,12 +269,9 @@ body {
   margin-bottom: 80px;
 }
 
-.cards > li {
+.card-li {
   background-color: #23252b;
   border-radius: 5px;
-}
-
-.card-li {
   display: flex;
   flex-direction: column;
   height: 100%;
