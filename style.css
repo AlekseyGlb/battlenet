@@ -390,11 +390,7 @@ body {
 }
 
 .prefooterbtn {
-  display: inline-flex;
-  /* position: absolute; */
-  /* margin-left: 200px;
-  margin-top: 50px; */
-  justify-content: space-between;
+
 }
 
 .prefooterbtn > a {
@@ -407,11 +403,8 @@ body {
   border: none;
 }
 
-.prefooterbtn > a:hover {
-  border-style: double;
-  border-color: #15171e;
-  border-width: 1px;
-  border-radius: 5px;
+.downloadbtn:hover, .detailsbtn:hover {
+outline: 1px solid #f5f5f591;
 }
 
 .imgwindows {
