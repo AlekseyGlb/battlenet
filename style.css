@@ -368,7 +368,7 @@ body {
 }
 
 .join {
-  
+  position: relative;
 }
 
 .title-prefooter {
@@ -388,24 +388,30 @@ body {
   margin: 0px;
   padding: 0px;
 }
-.prefooterbtn > button {
+
+.prefooterbtn {
+  display: inline-flex;
+  /* position: absolute; */
+  /* margin-left: 200px;
+  margin-top: 50px; */
+  justify-content: space-between;
+}
+
+.prefooterbtn > a {
   cursor: pointer;
   font-size: 20px;
   color: #f5f5f5;
   font-weight: 700;
-  padding: 25px 40px 25px 40px;
+  padding: 25px 40px;
   border-radius: 5px;
-  border-style: none;
+  border: none;
 }
 
-.prefooterbtn > button:hover {
-  outline: 0;
-border-style: double;
-  border-color: #f5f5f54b;
+.prefooterbtn > a:hover {
+  border-style: double;
+  border-color: #15171e;
   border-width: 1px;
-}
-.prefooterbtn > button:active {
-  outline: 0;
+  border-radius: 5px;
 }
 
 .imgwindows {
@@ -422,6 +428,7 @@ border-style: double;
 .detailsbtn {
   background-color: #2a2c34;
   margin-left: 20px;
+  margin: 0;
 }
 
 /* .footer */
