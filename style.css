@@ -346,6 +346,9 @@ body {
 /* .pre-footer */
 .pre-footer {
   background-image: url(images/prefooter/background.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 600px;
   width: 100%;
   border-top: 1px solid #cccccc70;
@@ -363,28 +366,70 @@ body {
   margin-left: 250px;
   margin-top: 100px;
 }
+
+.join {
+  
+}
+
 .title-prefooter {
   color: #f5f5f5;
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
+  font-weight: 700;
+  letter-spacing: -1px;
   margin: 0px;
-  padding: 150px 0 20px 0;
+  padding: 150px 0px 20px 0px;
 }
 
 .pretitle-prefooter {
   color: #cccccc;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   margin: 0px;
   padding: 0px;
 }
+.prefooterbtn > button {
+  cursor: pointer;
+  font-size: 20px;
+  color: #f5f5f5;
+  font-weight: 700;
+  padding: 25px 40px 25px 40px;
+  border-radius: 5px;
+  border-style: none;
+}
 
-/* .pre-footer */
+.prefooterbtn > button:hover {
+  border-style: double;
+  border-color: #f5f5f54b;
+  border-width: 1px;
+  transition: 500ms;
+}
+
+.imgwindows {
+  width: 30px;
+  max-width: 100%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.downloadbtn {
+ background-color: #0074e0;
+}
+
+.detailsbtn {
+  background-color: #2a2c34;
+  margin-left: 20px;
+}
+
+/* .footer */
 .footer {
   background-color: #15171e;
   width: 100%;
   height: 550px;
   border-top: 1px solid #cccccc41;
 }
+
+/* =============================== */
+
 
 
