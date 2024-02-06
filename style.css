@@ -399,10 +399,13 @@ body {
 }
 
 .prefooterbtn > button:hover {
-  border-style: double;
+  outline: 0;
+border-style: double;
   border-color: #f5f5f54b;
   border-width: 1px;
-  transition: 500ms;
+}
+.prefooterbtn > button:active {
+  outline: 0;
 }
 
 .imgwindows {
