@@ -390,7 +390,8 @@ body {
 }
 
 .prefooterbtn {
-
+  text-align: center;
+  margin-top: 60px;
 }
 
 .prefooterbtn > a {
@@ -421,6 +422,21 @@ outline: 1px solid #f5f5f591;
 .detailsbtn {
   background-color: #2a2c34;
   margin-left: 20px;
+}
+
+.download-link {
+  color: #cccccc;
+  font-size: 16px;
+  letter-spacing: 0,75px;
+  margin-top: 80px;
+  padding-left: 200px;
+}
+
+.link {
+  font-weight: 700;
+  color: #0074e0;
+  border-bottom: 2px #0074e0 solid;
+  letter-spacing: 0,75px;
 }
 
 /* .footer */
