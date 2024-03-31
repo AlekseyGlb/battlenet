@@ -497,7 +497,6 @@ outline: 1px solid #f5f5f591;
   vertical-align: top;
   padding-left: 50px;
   letter-spacing: 0,75px;
-
 }
 
 .footer-social {
@@ -515,6 +514,9 @@ outline: 1px solid #f5f5f591;
 
 .etc > a {
   margin-right: 15px;
+}
+.etc > a:hover {
+  color: #cccccc;
 }
 /* =============================== */
 
