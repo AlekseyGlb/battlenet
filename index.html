@@ -14,733 +14,785 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="header__top-block">
-            <div class="logo">
-                <img class="logo" src="images/logo.svg" alt="Logo" />
-            </div>
-            <ul class="options">
-                <div class="dropdown">
-                    <div class="dropbtnacc">
-                        <a href="#" class="options__link">
-                            <img class="downloadicon" src="images/downloadicon.png" alt="">
-                            Загрузка Battle.net
-                        </a>
-                    </div>
+    <div class="wrapper">
+        <header class="header__container">
+            <div class="header__top-block">
+                <div class="logo">
+                    <img class="logo" src="images/logo.svg" alt="Logo" />
                 </div>
-                <div class="dropdown">
-                    <div class="dropbtnacc">
-                        <a href="#" class="options__link">
-                            <img class="iconsupport" src="images/supporticon.png" alt="">
-                            Поддержка
-                        </a>
-                    </div>
-                </div>
-                <li class="options__item item-dropdown">
+                <ul class="options">
                     <div class="dropdown">
                         <div class="dropbtnacc">
-                            <img class="accicon" src="images/accicon.png" alt="">
-                            Учетная запись
+                            <a href="#" class="options__link">
+                                <img class="downloadicon" src="images/downloadicon.png" alt="dwnicon">
+                                Загрузка Battle.net
+                            </a>
                         </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropbtnacc">
+                            <a href="#" class="options__link">
+                                <img class="iconsupport" src="images/supporticon.png" alt="suppicon">
+                                Поддержка
+                            </a>
+                        </div>
+                    </div>
+                    <li class="options__item item-dropdown">
+                        <div class="dropdown">
+                            <div class="dropbtnacc">
+                                <img class="accicon" src="images/accicon.png" alt="accicon">
+                                Учетная запись
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="#">Вход</a>
+                                <a href="#">Параметры учтеной записи</a>
+                                <a href="#">Список желаемого</a>
+                                <a href="#">Использовать код</a>
+                                <a href="#">Сменить BattleTag</a>
+                                <a href="#">Регистрация</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__navigation">
+                <div class="games-navigation">
+                    <div class="dropdown">
+                        <div class="dropbtn">Warcraft</div>
                         <div class="dropdown-content">
-                            <a href="#">Вход</a>
-                            <a href="#">Параметры учтеной записи</a>
-                            <a href="#">Список желаемого</a>
-                            <a href="#">Использовать код</a>
-                            <a href="#">Сменить BattleTag</a>
-                            <a href="#">Регистрация</a>
+                            <a href="#">World of Warcraft</a>
+                            <a href="#">World of Warcraft classic</a>
+                            <a href="#">Warcraft Rumble</a>
+                            <a href="#">Warcraft III</a>
+                            <a href="#">Hearthstone</a>
                         </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropbtn">Call of Duty</div>
+                        <div class="dropdown-content">
+                            <a href="#">Modern Warfare III</a>
+                            <a href="#">Warzone</a>
+                            <a href="#">Modern Warfare II</a>
+                            <a href="#">Vanguard</a>
+                            <a href="#">Black Ops Cold War</a>
+                            <a href="#">Modern Warfare</a>
+                            <a href="#">Modern Warfare 2 Campaigb Remastered</a>
+                            <a href="#">Black Ops 4</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropbtn">Diablo</div>
+                        <div class="dropdown-content">
+                            <a href="#">Diavlo IV</a>
+                            <a href="#">Diablo Immortal</a>
+                            <a href="#">Diablo III</a>
+                            <a href="#">Diablo II: Resurrected</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropbtn">Overwatch</div>
+                        <div class="dropdown-content">
+                            <a href="#">Overwatch 2</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropbtn">StarCraft</div>
+                        <div class="dropdown-content">
+                            <a href="#">SratCraft II</a>
+                            <a href="#">SratCraft</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropbtn">Другие игры</div>
+                        <div class="dropdown-content">
+                            <a href="#">Collection BlizzCon</a>
+                            <a href="#">Blizzard Arcade Collection</a>
+                            <a href="#">Crash Bandicoot 4</a>
+                            <a href="#">Heroes of the Storm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <label class="search-label" for="#search">
+                        <img class="search-icon" src="images/search-icon.svg" alt="Search Icon">
+                        <input class="search-input" type="text" id="#search" placeholder="Поиск по магазину">
+                    </label>
+                </div>
+                <div class="money">
+                    <div class="dropdown">
+                        <button class="dropbtn-money">Кошелек Battle.net</button>
+                        <div class="dropdown-content">
+                            <a href="#">Пополнить счет</a>
+                            <a href="#">Подарочный баланс</a>
+                            <a href="#">История кошелька</a>
+                            <a href="#">Помощь</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <main class="content__container main">
+            <h2 class="content-title">Рекомендуем</h2>
+            <ul class="cards">
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/1.png" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF
+                            WARCRAFT</p>
+                        <p class="game-addon">World of Warcraft®: The War Within</p>
+                        <p class="gold">Включает получившее признание игроков дополнение Dragonflight</p>
+                        <p class="game-genre">MMORPG (многопользовательская сетевая ролевая игра)</p>
+                    </div>
+                    <div class="game-price">
+                        <p>От 999,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/2.png" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/D4.png" alt="">DIABLO IV</p>
+                        <p class="game-addon">Diablo IV: Ultimate Edition</p>
+                        <p class="game-genre">Action-RPG (ролевая игра в жанре "экшн")</p>
+                    </div>
+                    <div class="game-price">
+                        <p>3 499,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/3.png" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/BlizzCon.png" alt="">BLIZZCON
+                        </p>
+                        <p class="game-addon">Коллекция BlizzCon</p>
+                        <p class="game-genre">Внутриигровой контент</p>
+                    </div>
+                    <div class="game-price">
+                        <p>От 875,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/4.png" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/hearthstone.png"
+                                alt="">HEARTHSTONE</p>
+                        <p class="game-addon">Комплекты дополнения "ТИТАНЫ"</p>
+                        <p class="game-genre">Комплекты карт</p>
+                    </div>
+                    <div class="game-price">
+                        <p>От 99,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/5.png" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/cod.png" alt="">CALL OF DUTY:
+                            WARZONE</p>
+                        <p class="game-addon">Call of Duty: Warzone</p>
+                        <p class="gold">Бесплатно для всех</p>
+                        <p class="game-genre">БЕСПЛАТНЫЙ ШУТЕР</p>
+                    </div>
+                    <div class="game-price">
+                        <p>Играть бесплатно</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/6.png" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/wowcata.png" alt="">WORLD OF
+                            WARCRAFT CLASSIC CATACLYSM</p>
+                        <p class="game-addon">Пылающий героический комплект</p>
+                        <p class="gold">Повысьте градус напряжения! Ваши приключения станут еще увлекательнее с новыми
+                            огненными предметами! После выхода дополнения для игры в Cataclysm Classic понадобится
+                            только подписка World of Warcraft.</p>
+                        <p class="game-genre">Расширения</p>
+                    </div>
+                    <div class="game-price">
+                        <p>599,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/7.png" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/d2r.ico" alt="">DIABLO II:
+                            RESURRECTED</p>
+                        <p class="game-addon">Diablo II: Resurrected</p>
+                        <p class="gold">Уже доступно!</p>
+                        <p class="game-genre">Action-RPG (ролевая игра в жанре «экшн»)</p>
+                    </div>
+                    <div class="game-price">
+                        <p>1 239,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/8.png" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/codmw.png" alt="">CALL OF
+                            DUTY: MODERN WARFARE II</p>
+                        <p class="game-addon">Call of Duty: Modern Warfare II</p>
+                        <p class="gold">Играйте в Warzone™ бесплатно прямо сейчас.</p>
+                        <p class="game-genre">Шутер</p>
+                    </div>
+                    <div class="game-price">
+                        <p>2 375,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/9.png" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/sc2.png" alt="">STARCRAFT</p>
+                        <p class="game-addon">StarCraft Remastered</p>
+                        <p class="game-genre">Стратегия в реальном времени</p>
+                    </div>
+                    <div class="game-price">
+                        <p>372,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/10.png" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/hearthstone.png"
+                                alt="">HEARTHSTONE</p>
+                        <p class="game-addon">Классические копмлекты карт</p>
+                        <p class="game-genre">Комплекты карт</p>
+                    </div>
+                    <div class="game-price">
+                        <p>От 99,00 UAH</p>
                     </div>
                 </li>
             </ul>
-        </div>
+
+            <h2 class="content-title">Популярное</h2>
+            <ul class="cards">
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/popular/1.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF
+                            WARCRAFT</p>
+                        <p class="game-addon">World of Warcraft®: Подписка: специальное предложение</p>
+                        <p class="gold">Дает доступ к World of Warcraft, Wrath of the Lich King Classic, сезону открытий
+                            и героическим игровым мирам Classic!</p>
+                        <p class="game-genre">Подписка</p>
+                    </div>
+                    <div class="game-price">
+                        <p>Подробнее</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/popular/2.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/D4.png" alt="">Diablo IV</p>
+                        <p class="game-addon">Diablo IV: Ultimate Edition</p>
+                        <p class="game-genre">Action-RPG (ролевая игра в жанре "экшн")</p>
+                    </div>
+                    <div class="game-price">
+                        <p>3 499,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/popular/3.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/codmw.png" alt="">CALL OF
+                            DUTY: MODERN WARFARE III</p>
+                        <p class="game-addon">Call of Duty®: Modern Warfare® III - Vault Edition</p>
+                        <p class="gold">Купите Call of Duty®: Modern Warfare® III и начните сезон 1 прямо сейчас!</p>
+                        <p class="game-genre">Шутер</p>
+                    </div>
+                    <div class="game-price">
+                        <p>3 499,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/popular/4.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/hearthstone.png"
+                                alt="">Hearthstone</p>
+                        <p class="game-addon">Золотой мини-набор «Исследуйте глубины Подземья»</p>
+                        <p class="gold">Получите 72 золотые карты мини-набора и дополнительную алмазную карту!</p>
+                        <p class="game-genre">Мини-наборы</p>
+                    </div>
+                    <div class="game-price">
+                        <p>От 99,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/popular/5.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/overwatch.png"
+                                alt="">OVERWATCH 2</p>
+                        <p class="game-addon">Overwatch® 2: ультранабор боевого пропуска 8-го сезона</p>
+                        <p class="gold">Получите премиальный боевой пропуск 8-го сезона Overwatch 2: + 20 уровней,
+                            легендарные облики «Магма» (Мауга) и «Дикий следопыт» (Роковая Вдова), 2000 монет Overwatch
+                            и многое другое!</p>
+                        <p class="game-genre">Командный шутер</p>
+                    </div>
+                    <div class="game-price">
+                        <p>1 357,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/popular/6.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF
+                            WARCRAFT</p>
+                        <p class="game-addon">World of Warcraft®: The War Within™</p>
+                        <p class="gold">Включает получившее признание игроков дополнение Dragonflight.</p>
+                        <p class="game-genre">MMORPG (многопользовательская сетевая ролевая игра)</p>
+                    </div>
+                    <div class="game-price">
+                        <p>От 999,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/popular/7.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/rumble.svg" alt="">WARCRAFT
+                            RUMBLE</p>
+                        <p class="game-addon">Наборы монет</p>
+                        <p class="gold">Золото можно потратить, чтобы купить миниатюры, книги опыта, таланты и многое
+                            другое.</p>
+                        <p class="game-genre">Внутриигровой контент</p>
+                    </div>
+                    <div class="game-price">
+                        <p>От 34,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/popular/8.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/wowcata.svg" alt="">WORLD OF
+                            WARCRAFT CLASSIC CATACLYSM</p>
+                        <p class="game-addon">Расширение до пылающего эпического комплекта</p>
+                        <p class="gold">Повысьте градус напряжения! Ваши приключения станут еще увлекательнее с новыми
+                            огненными предметами! После выхода дополнения для игры в Cataclysm Classic понадобится
+                            только подписка World of Warcraft.</p>
+                        <p class="game-genre">Расширения</p>
+                    </div>
+                    <div class="game-price">
+                        <p>1 599,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/popular/9.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF
+                            WARCRAFT</p>
+                        <p class="game-addon">Улучшенное повышение уровня до 70-го</p>
+                        <p class="gold">Воспользуйтесь улучшенным повышением уровня персонажа и проходите самые сложные
+                            испытания в Dragonflight!</p>
+                        <p class="game-genre">Игровые услуги</p>
+                    </div>
+                    <div class="game-price">
+                        <p>От 1 299,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/popular/10.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/cod.png" alt="">CALL OF DUTY:
+                            WARZONE</p>
+                        <p class="game-addon">Call of Duty®: Warzone</p>
+                        <p class="gold">Бесплатно для всех</p>
+                        <p class="game-genre">БЕСПЛАТНЫЙ ШУТЕР</p>
+                    </div>
+                    <div class="game-price">
+                        <p>Играть бесплатно</p>
+                    </div>
+                </li>
+            </ul>
+
+            <h2 class="content-title">Актуальное</h2>
+            <ul class="cards">
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/Actual/1.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/battlnet.svg" alt="">УСЛУГИ
+                            BATTLE.NET</p>
+                        <p class="game-addon">Кошелек Battle.net®</p>
+                        <p class="game-genre">Игровые услуги</p>
+                    </div>
+                    <div class="game-price">
+                        <p>Подробнее</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/Actual/2.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF
+                            WARCRAFT</p>
+                        <p class="game-addon">Сумеречный набор</p>
+                        <p class="gold">Доступно в течение ограниченного времени! Покинет магазин на неопределенный срок
+                            29 февраля 2024 г.</p>
+                        <p class="game-genre">Трансмогрификация</p>
+                    </div>
+                    <div class="game-price">
+                        <p>745,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/Actual/wow3.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/wow3.svg" alt="">WARCRAFT III
+                        </p>
+                        <p class="game-addon">Warcraft® III: Reforged</p>
+                        <p class="game-genre">Стратегия в реальном времени</p>
+                    </div>
+                    <div class="game-price">
+                        <p>От 745,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/Actual/4.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/D4.png" alt="">DIABLO IV</p>
+                        <p class="game-addon">Diablo® IV - платина</p>
+                        <p class="gold">Расширьте боевой пропуск и делайте покупки в магазине</p>
+                        <p class="game-genre">Внутриигровой контент</p>
+                    </div>
+                    <div class="game-price">
+                        <p>От 169,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/Actual/5.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/d2r.ico" alt="">DIABLO CLASSIC
+                        </p>
+                        <p class="game-addon">Diablo®</p>
+                        <p class="gold">Включает дополнение Diablo: Hellfire</p>
+                        <p class="game-genre">Action-RPG (ролевая игра в жанре «экшн»)</p>
+                    </div>
+                    <div class="game-price">
+                        <p>248,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/Actual/murlok.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF
+                            WARCRAFT</p>
+                        <p class="game-addon">Игрушка «Магический мурковерть»</p>
+                        <p class="game-genre">Игрушки</p>
+                    </div>
+                    <div class="game-price">
+                        <p>248,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/Actual/7.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/battlnet.svg" alt="">УСЛУГИ
+                            BATTLE.NET</p>
+                        <p class="game-addon">Смена BattleTag</p>
+                        <p class="game-genre">Игровые услуги</p>
+                    </div>
+                    <div class="game-price">
+                        <p>248,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/Actual/totalbisc.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/sc2.png" alt="">STARCRAFT II
+                        </p>
+                        <p class="game-addon">Комментатор TotalBiscuit</p>
+                        <p class="game-genre">Комментаторы</p>
+                    </div>
+                    <div class="game-price">
+                        <p>Получить бесплатно</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/Actual/sc.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/starcraft-remastered.svg"
+                                alt="">STARCRAFT</p>
+                        <p class="game-addon">StarCraft Remastered</p>
+                        <p class="game-genre">Стратегия в реальном времени</p>
+                    </div>
+                    <div class="game-price">
+                        <p>372,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/Actual/10.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon"
+                                src="images/game icon/call-of-duty-black-ops-cold-war.svg" alt="">CALL OF DUTY: BOCW</p>
+                        <p class="game-addon">Очки Call of Duty®: Black Ops Cold War (CP)</p>
+                        <p class="game-genre">Внутриигровой контент</p>
+                    </div>
+                    <div class="game-price">
+                        <p>От 59,00 UAH</p>
+                    </div>
+                </li>
+            </ul>
+
+            <h2 class="content-title">Идеальный подарок</h2>
+            <ul class="cards">
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/present/1.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/battlnet.svg" alt="">УСЛУГИ
+                            BATTLE.NET</p>
+                        <p class="game-addon">Кошелек Battle.net®</p>
+                        <p class="game-genre">Игровые услуги</p>
+                    </div>
+                    <div class="game-price">
+                        <p>Подробнее</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/present/2.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/battlnet.svg" alt="">WORLD OF
+                            WARCRAFT</p>
+                        <p class="game-addon">60 дней игрового времени</p>
+                        <p class="gold">Дает доступ к World of Warcraft, Wrath of the Lich King Classic, сезону открытий
+                            и героическим игровым мирам Classic!</p>
+                        <p class="game-genre">Игровые услуги</p>
+                    </div>
+                    <div class="game-price">
+                        <p>745,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/present/4.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/codmw.png" alt="">CALL OF
+                            DUTY: MODERN WARFARE III</p>
+                        <p class="game-addon">Call of Duty®: Modern Warfare® III - Vault Edition</p>
+                        <p class="gold">Купите Call of Duty®: Modern Warfare® III и начните сезон 1 прямо сейчас!</p>
+                        <p class="game-genre">Шутер</p>
+                    </div>
+                    <div class="game-price">
+                        <p>3 499,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/present/3.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF
+                            WARCRAFT</p>
+                        <p class="game-addon">World of Warcraft®: The War Within™</p>
+                        <p class="gold">Включает получившее признание игроков дополнение Dragonflight.</p>
+                        <p class="game-genre">MMORPG (многопользовательская сетевая ролевая игра)</p>
+                    </div>
+                    <div class="game-price">
+                        <p>От 999,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/present/6.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/overwatch.png"
+                                alt="">OVERWATCH 2</p>
+                        <p class="game-addon">Overwatch® 2 — монеты Overwatch</p>
+                        <p class="gold">Приобретите премиальный боевой пропуск и другие бонусы за монеты Overwatch!</p>
+                        <p class="game-genre">Монеты и жетоны</p>
+                    </div>
+                    <div class="game-price">
+                        <p>От 169,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/present/5.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF
+                            WARCRAFT</p>
+                        <p class="game-addon">Попрыгунчик</p>
+                        <p class="gold">Доступно в течение ограниченного времени! Покинет магазин на неопределенный срок
+                            29 февраля 2024 г.</p>
+                        <p class="game-genre">Питомцы</p>
+                    </div>
+                    <div class="game-price">
+                        <p>182,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/present/wowtrans.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF
+                            WARCRAFT</p>
+                        <p class="game-addon">Сумеречный набор</p>
+                        <p class="gold">Доступно в течение ограниченного времени! Покинет магазин на неопределенный срок
+                            29 февраля 2024 г.</p>
+                        <p class="game-genre">Трансмогрификация</p>
+                    </div>
+                    <div class="game-price">
+                        <p>745,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/present/8.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/D4.png" alt="">DIABLO IV</p>
+                        <p class="game-addon">Diablo® IV: Ultimate Edition</p>
+                        <p class="game-genre">Action-RPG (ролевая игра в жанре «экшн»)</p>
+                    </div>
+                    <div class="game-price">
+                        <p>3 499,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/present/7.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF
+                            WARCRAFT</p>
+                        <p class="game-addon">World of Warcraft®: Dragonflight</p>
+                        <p class="gold">Теперь включено во все издания дополнения The War Within™!</p>
+                        <p class="game-genre">MMORPG (многопользовательская сетевая ролевая игра)</p>
+                    </div>
+                    <div class="game-price">
+                        <p>599,00 UAH</p>
+                    </div>
+                </li>
+                <li class="card-li">
+                    <div class="img-container">
+                        <img class="card-image" src="images/card/present/9.avif" alt="">
+                    </div>
+                    <div class="overview">
+                        <p class="game-name"><img class="game-icon" src="images/game icon/d2r.ico" alt="">DIABLO II:
+                            RESURRECTED</p>
+                        <p class="game-addon">Diablo II: Resurrected™</p>
+                        <p class="gold">Уже доступно!</p>
+                        <p class="game-genre">Action-RPG (ролевая игра в жанре «экшн»)</p>
+                    </div>
+                    <div class="game-price">
+                        <p>1 239,00 UAH</p>
+                    </div>
+                </li>
+            </ul>
+        </main>
+
+        <footer class="footer">
+            <div class="pre-footer">
+                <div class="laptop">
+                    <img class="laptop" src="images/prefooter/Laptop.avif" alt="">
+                </div>
+                <div class="join">
+                    <h4 class="title-prefooter">Погрузитесь в приключения</h4>
+                    <p class="pretitle-prefooter">Загрузите Battle.net и присоединитесь к миллионам игроков.</p>
+                    <div class="prefooterbtn">
+                        <a href="#" class="downloadbtn"><img class="imgwindows" src="images/windows.png" alt="">Загрузка для
+                            Windows</a>
+                        <a href="#" class="detailsbtn">Подробнее</a>
+                    </div>
+                    <p class="download-link">Также доступно для <a class="link" href="#">Mac</a> и <a class="link"
+                            href="#">мобильных устройств</a></p>
+                </div>
+            </div>
+            <div class="footer__container">   
+                <div class="footer-links">
+                    <a href="#">Вакансии</a>
+                    <a href="#">О компании</a>
+                    <a href="#">Поддержка</a>
+                    <a href="#">Открыть запрос</a>
+                    <a href="#">Пресс-релизы</a>
+                    <a href="#">API</a>
+                    <a class="lang-change" href="#">Русский<img class="arrow" src="images/iconarrow.png" alt=""></a>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-logo">
+                        <img src="images/logo.svg" alt="footerlogo">
+                    </div>
+                    <div class="footer-etc">
+                        <span>© Blizzard Entertainment, Inc., 2024</span><br><br>
+                        <span>Все упомянутые товарные знаки являются собственностью соответствующих владельцев.</span><br>
+                        <div class="etc">
+                            <a href="#">Политика конфиденциальности</a>
+                            <a href="#">Соглашения</a>
+                            <a href="#">Условия</a>
+                            <a href="#">Политика cookie</a>
+                            <a href="#">Параметры cookie</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-social">  
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <div class="header__navigation">
-        <div class="games-navigation">
-            <div class="dropdown">
-                <div class="dropbtn">Warcraft</div>
-                <div class="dropdown-content">
-                    <a href="#">World of Warcraft</a>
-                    <a href="#">World of Warcraft classic</a>
-                    <a href="#">Warcraft Rumble</a>
-                    <a href="#">Warcraft III</a>
-                    <a href="#">Hearthstone</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="dropbtn">Call of Duty</div>
-                <div class="dropdown-content">
-                    <a href="#">Modern Warfare III</a>
-                    <a href="#">Warzone</a>
-                    <a href="#">Modern Warfare II</a>
-                    <a href="#">Vanguard</a>
-                    <a href="#">Black Ops Cold War</a>
-                    <a href="#">Modern Warfare</a>
-                    <a href="#">Modern Warfare 2 Campaigb Remastered</a>
-                    <a href="#">Black Ops 4</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="dropbtn">Diablo</div>
-                <div class="dropdown-content">
-                    <a href="#">Diavlo IV</a>
-                    <a href="#">Diablo Immortal</a>
-                    <a href="#">Diablo III</a>
-                    <a href="#">Diablo II: Resurrected</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="dropbtn">Overwatch</div>
-                <div class="dropdown-content">
-                    <a href="#">Overwatch 2</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="dropbtn">StarCraft</div>
-                <div class="dropdown-content">
-                    <a href="#">SratCraft II</a>
-                    <a href="#">SratCraft</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="dropbtn">Другие игры</div>
-                <div class="dropdown-content">
-                    <a href="#">Collection BlizzCon</a>
-                    <a href="#">Blizzard Arcade Collection</a>
-                    <a href="#">Crash Bandicoot 4</a>
-                    <a href="#">Heroes of the Storm</a>
-                </div>
-            </div>
-        </div>
-        <div class="search">
-            <label class="search-label" for="#search">
-                <img class="search-icon" src="images/search-icon.svg" alt="Search Icon">
-                <input class="search-input" type="text" id="#search"  placeholder="Поиск по магазину">
-            </label>
-        </div>
-        <div class="money">
-            <div class="dropdown">
-                <button class="dropbtn-money">Кошелек Battle.net</button>
-                <div class="dropdown-content">
-                    <a href="#">Пополнить счет</a>
-                    <a href="#">Подарочный баланс</a>
-                    <a href="#">История кошелька</a>
-                    <a href="#">Помощь</a>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-
-    <div class="content">       
-        <h2 class="content-title">Рекомендуем</h2>
-        <ul class="cards">
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/1.png" alt="">
-                </div>
-                <div class="overview">                    
-                    <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF WARCRAFT</p>
-                    <p class="game-addon">World of Warcraft®: The War Within</p>
-                    <p class="gold">Включает получившее признание игроков дополнение Dragonflight</p>
-                    <p class="game-genre">MMORPG (многопользовательская сетевая ролевая игра)</p>
-                </div>
-                <div class="game-price">
-                    <p>От 999,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/2.png" alt="">
-                </div>
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/D4.png" alt="">DIABLO IV</p>
-                    <p class="game-addon">Diablo IV: Ultimate Edition</p>
-                    <p class="game-genre">Action-RPG (ролевая игра в жанре "экшн")</p>
-                </div>
-                <div class="game-price">
-                    <p>3 499,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/3.png" alt="">
-                </div>
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/BlizzCon.png" alt="">BLIZZCON</p>
-                    <p class="game-addon">Коллекция BlizzCon</p>
-                    <p class="game-genre">Внутриигровой контент</p>
-                </div>
-                <div class="game-price">
-                    <p>От 875,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/4.png" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/hearthstone.png" alt="">HEARTHSTONE</p>
-                    <p class="game-addon">Комплекты дополнения "ТИТАНЫ"</p>
-                    <p class="game-genre">Комплекты карт</p>                   
-                </div >
-                <div class="game-price">
-                    <p>От 99,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/5.png" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/cod.png" alt="">CALL OF DUTY: WARZONE</p>
-                    <p class="game-addon">Call of Duty: Warzone</p>
-                    <p class="gold">Бесплатно для всех</p>
-                    <p class="game-genre">БЕСПЛАТНЫЙ ШУТЕР</p>
-                </div>
-                <div class="game-price">
-                    <p>Играть бесплатно</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/6.png" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/wowcata.png" alt="">WORLD OF WARCRAFT CLASSIC CATACLYSM</p>
-                    <p class="game-addon">Пылающий героический комплект</p>
-                    <p class="gold">Повысьте градус напряжения! Ваши приключения станут еще увлекательнее с новыми огненными предметами! После выхода дополнения для игры в Cataclysm Classic понадобится только подписка World of Warcraft.</p>
-                    <p class="game-genre">Расширения</p>
-                </div>
-                <div class="game-price">
-                    <p>599,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/7.png" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/d2r.ico" alt="">DIABLO II: RESURRECTED</p>
-                    <p class="game-addon">Diablo II: Resurrected</p>              
-                    <p class="gold">Уже доступно!</p>
-                    <p class="game-genre">Action-RPG (ролевая игра в жанре «экшн»)</p>
-                </div>
-                <div class="game-price">
-                    <p>1 239,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/8.png" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/codmw.png" alt="">CALL OF DUTY: MODERN WARFARE II</p>
-                    <p class="game-addon">Call of Duty: Modern Warfare II</p>                   
-                    <p class="gold">Играйте в Warzone™ бесплатно прямо сейчас.</p>
-                    <p class="game-genre">Шутер</p>
-                </div>
-                <div class="game-price">
-                    <p>2 375,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/9.png" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/sc2.png" alt="">STARCRAFT</p>
-                    <p class="game-addon">StarCraft Remastered</p>
-                    <p class="game-genre">Стратегия в реальном времени</p>
-                </div>
-                <div class="game-price">
-                    <p>372,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/10.png" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/hearthstone.png" alt="">HEARTHSTONE</p>
-                    <p class="game-addon">Классические копмлекты карт</p>
-                    <p class="game-genre">Комплекты карт</p>
-                </div>
-                <div class="game-price">
-                    <p>От 99,00 UAH</p>
-                </div>
-            </li>
-        </ul>
-
-        <h2 class="content-title">Популярное</h2>
-        <ul class="cards">
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/popular/1.avif" alt="">
-                </div>
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF WARCRAFT</p>
-                    <p class="game-addon">World of Warcraft®: Подписка: специальное предложение</p>
-                    <p class="gold">Дает доступ к World of Warcraft, Wrath of the Lich King Classic, сезону открытий и героическим игровым мирам Classic!</p>
-                    <p class="game-genre">Подписка</p>
-                </div>
-                <div class="game-price">
-                    <p>Подробнее</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/popular/2.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/D4.png" alt="">Diablo IV</p>
-                    <p class="game-addon">Diablo IV: Ultimate Edition</p>
-                    <p class="game-genre">Action-RPG (ролевая игра в жанре "экшн")</p>
-                </div>
-                <div class="game-price">
-                    <p>3 499,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/popular/3.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/codmw.png" alt="">CALL OF DUTY: MODERN WARFARE III</p>
-                    <p class="game-addon">Call of Duty®: Modern Warfare® III - Vault Edition</p>
-                    <p class="gold">Купите Call of Duty®: Modern Warfare® III и начните сезон 1 прямо сейчас!</p>
-                    <p class="game-genre">Шутер</p>
-                </div>
-                <div class="game-price">
-                    <p>3 499,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/popular/4.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/hearthstone.png" alt="">Hearthstone</p>
-                    <p class="game-addon">Золотой мини-набор «Исследуйте глубины Подземья»</p>
-                    <p class="gold">Получите 72 золотые карты мини-набора и дополнительную алмазную карту!</p>
-                    <p class="game-genre">Мини-наборы</p>
-                </div>
-                <div class="game-price">
-                    <p>От 99,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/popular/5.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/overwatch.png" alt="">OVERWATCH 2</p>
-                    <p class="game-addon">Overwatch® 2: ультранабор боевого пропуска 8-го сезона</p>
-                    <p class="gold">Получите премиальный боевой пропуск 8-го сезона Overwatch 2: + 20 уровней, легендарные облики «Магма» (Мауга) и «Дикий следопыт» (Роковая Вдова), 2000 монет Overwatch и многое другое!</p>
-                    <p class="game-genre">Командный шутер</p>
-                </div>
-                <div class="game-price">
-                    <p>1 357,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/popular/6.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF WARCRAFT</p>
-                    <p class="game-addon">World of Warcraft®: The War Within™</p>
-                    <p class="gold">Включает получившее признание игроков дополнение Dragonflight.</p>
-                    <p class="game-genre">MMORPG (многопользовательская сетевая ролевая игра)</p>
-                </div>
-                <div class="game-price">
-                    <p>От 999,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/popular/7.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/rumble.svg" alt="">WARCRAFT RUMBLE</p>
-                    <p class="game-addon">Наборы монет</p>              
-                    <p class="gold">Золото можно потратить, чтобы купить миниатюры, книги опыта, таланты и многое другое.</p>
-                    <p class="game-genre">Внутриигровой контент</p>
-                </div>
-                <div class="game-price">
-                    <p>От 34,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/popular/8.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/wowcata.svg" alt="">WORLD OF WARCRAFT CLASSIC CATACLYSM</p>
-                    <p class="game-addon">Расширение до пылающего эпического комплекта</p>                   
-                    <p class="gold">Повысьте градус напряжения! Ваши приключения станут еще увлекательнее с новыми огненными предметами! После выхода дополнения для игры в Cataclysm Classic понадобится только подписка World of Warcraft.</p>
-                    <p class="game-genre">Расширения</p>
-                </div>
-                <div class="game-price">
-                    <p>1 599,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/popular/9.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF WARCRAFT</p>
-                    <p class="game-addon">Улучшенное повышение уровня до 70-го</p>
-                    <p class="gold">Воспользуйтесь улучшенным повышением уровня персонажа и проходите самые сложные испытания в Dragonflight!</p>
-                    <p class="game-genre">Игровые услуги</p>
-                </div>
-                <div class="game-price">
-                    <p>От 1 299,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/popular/10.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/cod.png" alt="">CALL OF DUTY: WARZONE</p>
-                    <p class="game-addon">Call of Duty®: Warzone</p>
-                    <p class="gold">Бесплатно для всех</p>
-                    <p class="game-genre">БЕСПЛАТНЫЙ ШУТЕР</p>
-                </div>
-                <div class="game-price">
-                    <p>Играть бесплатно</p>
-                </div>
-            </li>
-        </ul>
-
-        <h2 class="content-title">Актуальное</h2>
-        <ul class="cards">
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/Actual/1.avif" alt="">
-                </div>
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/battlnet.svg" alt="">УСЛУГИ BATTLE.NET</p>
-                    <p class="game-addon">Кошелек Battle.net®</p>
-                    <p class="game-genre">Игровые услуги</p>
-                </div>
-                <div class="game-price">
-                    <p>Подробнее</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/Actual/2.avif" alt="">
-                </div>
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF WARCRAFT</p>
-                    <p class="game-addon">Сумеречный набор</p>
-                    <p class="gold">Доступно в течение ограниченного времени! Покинет магазин на неопределенный срок 29 февраля 2024 г.</p>
-                    <p class="game-genre">Трансмогрификация</p>
-                </div>
-                <div class="game-price">
-                    <p>745,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/Actual/wow3.avif" alt="">
-                </div>
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/wow3.svg" alt="">WARCRAFT III</p>
-                    <p class="game-addon">Warcraft® III: Reforged</p>
-                    <p class="game-genre">Стратегия в реальном времени</p>
-                </div>
-                <div class="game-price">
-                    <p>От 745,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/Actual/4.avif" alt="">
-                </div>
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/D4.png" alt="">DIABLO IV</p>
-                    <p class="game-addon">Diablo® IV - платина</p>
-                    <p class="gold">Расширьте боевой пропуск и делайте покупки в магазине</p>
-                    <p class="game-genre">Внутриигровой контент</p>
-                </div>
-                <div class="game-price">
-                    <p>От 169,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/Actual/5.avif" alt="">
-                </div>
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/d2r.ico" alt="">DIABLO CLASSIC</p>
-                    <p class="game-addon">Diablo®</p>
-                    <p class="gold">Включает дополнение Diablo: Hellfire</p>
-                    <p class="game-genre">Action-RPG (ролевая игра в жанре «экшн»)</p>
-                </div>
-                <div class="game-price">
-                    <p>248,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/Actual/murlok.avif" alt="">
-                </div>
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF WARCRAFT</p>
-                    <p class="game-addon">Игрушка «Магический мурковерть»</p>
-                    <p class="game-genre">Игрушки</p>
-                </div>
-                <div class="game-price">
-                    <p>248,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/Actual/7.avif" alt="">
-                </div>
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/battlnet.svg" alt="">УСЛУГИ BATTLE.NET</p>
-                    <p class="game-addon">Смена BattleTag</p>              
-                    <p class="game-genre">Игровые услуги</p>
-                </div>
-                <div class="game-price">
-                    <p>248,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/Actual/totalbisc.avif" alt="">
-                </div>
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/sc2.png" alt="">STARCRAFT II</p>
-                    <p class="game-addon">Комментатор TotalBiscuit</p>                   
-                    <p class="game-genre">Комментаторы</p>
-                </div>
-                <div class="game-price">
-                    <p>Получить бесплатно</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/Actual/sc.avif" alt="">
-                </div>
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/starcraft-remastered.svg" alt="">STARCRAFT</p>
-                    <p class="game-addon">StarCraft Remastered</p>
-                    <p class="game-genre">Стратегия в реальном времени</p>
-                </div>
-                <div class="game-price">
-                    <p>372,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/Actual/10.avif" alt="">
-                </div>
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/call-of-duty-black-ops-cold-war.svg" alt="">CALL OF DUTY: BOCW</p>
-                    <p class="game-addon">Очки Call of Duty®: Black Ops Cold War (CP)</p>
-                    <p class="game-genre">Внутриигровой контент</p>
-                </div>
-                <div class="game-price">
-                    <p>От 59,00 UAH</p>
-                </div>
-            </li>
-        </ul>
-
-        <h2 class="content-title">Идеальный подарок</h2>
-        <ul class="cards">
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/present/1.avif" alt="">
-                </div>
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/battlnet.svg" alt="">УСЛУГИ BATTLE.NET</p>
-                    <p class="game-addon">Кошелек Battle.net®</p>
-                    <p class="game-genre">Игровые услуги</p>
-                </div>
-                <div class="game-price">
-                    <p>Подробнее</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/present/2.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/battlnet.svg" alt="">WORLD OF WARCRAFT</p>
-                    <p class="game-addon">60 дней игрового времени</p>
-                    <p class="gold">Дает доступ к World of Warcraft, Wrath of the Lich King Classic, сезону открытий и героическим игровым мирам Classic!</p>
-                    <p class="game-genre">Игровые услуги</p>
-                </div>
-                <div class="game-price">
-                    <p>745,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/present/4.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/codmw.png" alt="">CALL OF DUTY: MODERN WARFARE III</p>
-                    <p class="game-addon">Call of Duty®: Modern Warfare® III - Vault Edition</p>
-                    <p class="gold">Купите Call of Duty®: Modern Warfare® III и начните сезон 1 прямо сейчас!</p>
-                    <p class="game-genre">Шутер</p>
-                </div>
-                <div class="game-price">
-                    <p>3 499,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/present/3.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF WARCRAFT</p>
-                    <p class="game-addon">World of Warcraft®: The War Within™</p>
-                    <p class="gold">Включает получившее признание игроков дополнение Dragonflight.</p>
-                    <p class="game-genre">MMORPG (многопользовательская сетевая ролевая игра)</p>
-                </div>
-                <div class="game-price">
-                    <p>От 999,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/present/6.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/overwatch.png" alt="">OVERWATCH 2</p>
-                    <p class="game-addon">Overwatch® 2 — монеты Overwatch</p>
-                    <p class="gold">Приобретите премиальный боевой пропуск и другие бонусы за монеты Overwatch!</p>
-                    <p class="game-genre">Монеты и жетоны</p>
-                </div>
-                <div class="game-price">
-                    <p>От 169,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/present/5.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF WARCRAFT</p>
-                    <p class="game-addon">Попрыгунчик</p>
-                    <p class="gold">Доступно в течение ограниченного времени! Покинет магазин на неопределенный срок 29 февраля 2024 г.</p>
-                    <p class="game-genre">Питомцы</p>
-                </div>
-                <div class="game-price">
-                    <p>182,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/present/wowtrans.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF WARCRAFT</p>
-                    <p class="game-addon">Сумеречный набор</p>              
-                    <p class="gold">Доступно в течение ограниченного времени! Покинет магазин на неопределенный срок 29 февраля 2024 г.</p>
-                    <p class="game-genre">Трансмогрификация</p>
-                </div>
-                <div class="game-price">
-                    <p>745,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/present/8.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/D4.png" alt="">DIABLO IV</p>
-                    <p class="game-addon">Diablo® IV: Ultimate Edition</p>                   
-                    <p class="game-genre">Action-RPG (ролевая игра в жанре «экшн»)</p>
-                </div>
-                <div class="game-price">
-                    <p>3 499,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/present/7.avif" alt="">
-                </div> 
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/WoW.png" alt="">WORLD OF WARCRAFT</p>
-                    <p class="game-addon">World of Warcraft®: Dragonflight</p>
-                    <p class="gold">Теперь включено во все издания дополнения The War Within™!</p>
-                    <p class="game-genre">MMORPG (многопользовательская сетевая ролевая игра)</p>
-                </div>
-                <div class="game-price">
-                    <p>599,00 UAH</p>
-                </div>
-            </li>
-            <li class="card-li">
-                <div class="img-container">
-                    <img class="card-image" src="images/card/present/9.avif" alt="">
-                </div>
-                <div class="overview">
-                    <p class="game-name"><img class="game-icon" src="images/game icon/d2r.ico" alt="">DIABLO II: RESURRECTED</p>
-                    <p class="game-addon">Diablo II: Resurrected™</p>
-                    <p class="gold">Уже доступно!</p>
-                    <p class="game-genre">Action-RPG (ролевая игра в жанре «экшн»)</p>
-                </div> 
-                <div class="game-price">
-                    <p>1 239,00 UAH</p>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-    <div class="pre-footer">
-        <div class="laptop">
-            <img class="laptop" src="images/prefooter/Laptop.avif" alt="">
-        </div>
-        <div class="join">
-            <h4 class="title-prefooter">Погрузитесь в приключения</h4>
-            <p class="pretitle-prefooter">Загрузите Battle.net и присоединитесь к миллионам игроков.</p>
-            <div class="prefooterbtn">
-                <a href="#" class="downloadbtn"><img class="imgwindows" src="images/windows.png" alt="">Загрузка для Windows</a>
-                <a href="#" class="detailsbtn">Подробнее</a>
-            </div>
-            <p class="download-link">Также доступно для <a class="link" href="#">Mac</a> и <a class="link" href="#">мобильных устройств</a></p>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="footer-links">
-            <a href="#">Вакансии</a>
-            <a href="#">О компании</a>
-            <a href="#">Поддержка</a>
-            <a href="#">Открыть запрос</a>
-            <a href="#">Пресс-релизы</a>
-            <a href="#">API</a>
-            <a class="lang-change" href="#">Русский<img class="arrow" src="images/iconarrow.png" alt=""></a>           
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-logo">
-                <img src="images/logo.svg" alt="">
-            </div>
-            <div class="footer-etc">
-                <span>© Blizzard Entertainment, Inc., 2024</span><br><br>
-                <span>Все упомянутые товарные знаки являются собственностью соответствующих владельцев.</span><br>
-                <div class="etc">
-                    <a href="#">Политика конфиденциальности</a>
-                    <a href="#">Соглашения</a>
-                    <a href="#">Условия</a>
-                    <a href="#">Политика cookie</a>
-                    <a href="#">Параметры cookie</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-social">
-            
-        </div>
-    </div>
-
 </body>
 
 </html>

@@ -1,17 +1,20 @@
-/* Header */
+/* Var */
 :root {
-  --content-padding: 5%;
+  /* --content-padding: 8%; */
   --border-radius: 5px;
 }
 
 /* Сброс */
-html {
+html, body {
+  height: 100%;
+  min-width: 320px;
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
+*, *::before,*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
   box-sizing: border-box;
 }
 
@@ -21,57 +24,33 @@ a {
 }
 
 body {
-  margin: 0;
-  box-sizing: border-box;
+  line-height: 1;
   font-family: Noto Sans, Helvetica, Arial, sans-serif;
   background-color: #15171e;
 }
 
-/* header */
-.header {
-  background-color: #15171e;
-  padding-left: 150px;
-  padding-right: 175px;
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
+.main {
+  flex: 1 1 auto;
+}
+
+[class*="__container"] {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* header */
 .header__top-block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-}
-
-
-/* Icons */
-.iconsupport {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  display: inline-flex;
-  align-items: center;
-  margin-right: 5px;
-  justify-content: space-between;
-}
-
-.downloadicon {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  display: inline-flex;
-  align-items: center;
-  margin-right: 5px;
-  justify-content: space-between;
-}
-
-.accicon {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  display: inline-flex;
-  align-items: center;
-  margin-right: 5px;
-  justify-content: space-between;
 }
 
 /* Navigation */
@@ -83,7 +62,7 @@ body {
   position: sticky;
   top: 0;
   background-color: #15171e;
-  padding: 15px var(--content-padding);
+  /* padding: 0px var(--content-padding); */
 }
 
 .games-navigation {
@@ -116,6 +95,38 @@ body {
 .logo img {
   max-width: 100%;
 }
+
+/* Icons */
+.iconsupport {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+  justify-content: space-between;
+}
+
+.downloadicon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+  justify-content: space-between;
+}
+
+.accicon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+  justify-content: space-between;
+}
+
 
 /* search */
 .search {
@@ -258,10 +269,12 @@ body {
 }
 
 /* Сontent - card */
-.content {
+/* .content {
   margin: 0 0 50px 0;
   padding: 0 var(--content-padding);
-}
+} */
+
+
 
 .cards {
   display: grid;
@@ -270,8 +283,8 @@ body {
   gap: 20px;
   color: #f5f5f5;
   list-style: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   margin-bottom: 80px;
 }
 
@@ -525,7 +538,64 @@ outline: 1px solid #f5f5f591;
 .etc > a:hover {
   color: #cccccc;
 }
-/* =============================== */
 
+/* @media */
+/* @media only screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .gold {
+    font-size: 12px;
+    color: rgb(255, 174, 0);
+    margin: 0px;
+    padding-top: 10px;
+    line-height: 20px;
+  }
+  .game-name {
+    display: none;
+  }
+  .game-addon {
+    font-size: 16px;
+    font-weight: 700;
+    color: #f5f5f5;
+    margin: 0px;
+    padding-top: 5px;
+  }
+  :root {
+    --content-padding: 2%;
+  }
+}
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+  }
+  :root {
+    --content-padding: 2%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+  }
+  :root {
+    --content-padding: 2%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .cards {
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 auto;
+  } */
+  /* :root {
+    --content-padding: 2%;
+  }
+} */
 
