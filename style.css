@@ -294,6 +294,7 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
+  cursor: pointer;
 }
 
 .overview {
