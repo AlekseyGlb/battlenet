@@ -9,6 +9,9 @@ html, body {
   height: 100%;
   min-width: 320px;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 *, *::before,*::after {
@@ -45,33 +48,13 @@ body {
 }
 
 /* header */
-.header__top-block {
+.header__top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-}
-
-/* Navigation */
-.header__navigation {
-  display: grid;
-  grid-template-columns: 5fr 2.68fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 8px;
-  position: sticky;
-  top: 0;
-  background-color: #15171e;
-  /* padding: 0px var(--content-padding); */
-}
-
-.games-navigation {
-  background-color: #23252b;
-  padding: 1px;
-  border-radius: var(--border-radius);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  margin-bottom: -10px;
 }
 
 .options {
@@ -95,6 +78,27 @@ body {
 .logo img {
   max-width: 100%;
 }
+
+/* Navigation */
+.navigation {
+  display: grid;
+  grid-template-columns: 5fr 2.90fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 8px;
+  position: sticky;
+  top: 0;
+  background-color: #15171e;
+  padding: 15px 0 15px 0;
+}
+
+.games-navigation {
+  background-color: #23252b;
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 
 /* Icons */
 .iconsupport {
@@ -154,7 +158,7 @@ body {
 .search-input {
   background-color: #23252b;
   border-style: none;
-  position: relative;
+  /* position: relative; */
   width: 100%;
   height: 100%;
   border-radius: var(--border-radius);
@@ -168,7 +172,7 @@ body {
   border-radius: var(--border-radius);
   border: none;
   outline: none;
-  font-size: 13px;
+  font-size: 16px;
   color: #cccccc;
 }
 
@@ -191,7 +195,7 @@ body {
 .dropbtn-money {
   background-color: #23252b;
   color: #cccccc;
-  padding: 17px;
+  padding: 16px;
   font-size: 16px;
   border-radius: var(--border-radius);
   border: none;
@@ -268,23 +272,17 @@ body {
   color: #f5f5f5;
 }
 
-/* Сontent - card */
-/* .content {
-  margin: 0 0 50px 0;
-  padding: 0 var(--content-padding);
-} */
-
-
-
+/* Main - card */
 .cards {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns:
+  /* minmax(300px, max-content) */
+  repeat(5, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 20px;
   color: #f5f5f5;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
   margin-bottom: 80px;
 }
 
