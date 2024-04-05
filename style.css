@@ -298,7 +298,7 @@ body {
 }
 
 .overview {
-  padding: 24px 24px 0 24px;
+  padding: 24px 20px 0 20px;
   letter-spacing: 0.25px;
 }
 
@@ -344,13 +344,15 @@ body {
   font-size: 16px;
   font-weight: 700;
   color: #f5f5f5;
-  padding: 30px 24px 10px 24px;
+  padding: 25px 20px 20px 20px;
   margin-top: auto;
 }
 
 
 .img-container {
-  height: 170px;
+  display: flex;
+  max-height: 170px;
+  min-height: 100px;
   overflow: hidden;
   border-radius: var(--border-radius);
 }
@@ -374,12 +376,6 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 60px 150px;
-}
-
-@media only screen and (max-width: 767px) {
-  .pre-footer {
-    flex-direction: column;
-  }
 }
 
 .laptop > img {
@@ -540,12 +536,12 @@ outline: 1px solid #f5f5f591;
 }
 
 /* @media */
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
-    max-height: 100%;
-    max-width: 100%;
+    padding: 0 15px 0 15px;
+    gap: 15px;
   }
   .gold {
     font-size: 12px;
@@ -564,38 +560,54 @@ outline: 1px solid #f5f5f591;
     margin: 0px;
     padding-top: 5px;
   }
-  :root {
-    --content-padding: 2%;
+  .content-title {
+    padding: 50px 0 20px 15px
+  }
+  .game-addon {
+    font-size: 16px;
+  }
+  .overview {
+    padding: 24px 30px 0 15px;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 720px) and (max-width: 1200px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
+    padding: 0 15px 0 15px;
+    gap: 15px
   }
-  :root {
-    --content-padding: 2%;
+  .content-title {
+    padding: 50px 0 20px 15px
+  }
+  .game-addon {
+    font-size: 16px;
+  }
+  .overview {
+    padding: 24px 15px 0 15px;
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .cards {
     grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
+    padding: 0 15px 0 15px;
   }
-  :root {
-    --content-padding: 2%;
+  .content-title {
+    padding: 50px 0 20px 15px
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1400px) and (max-width: 1618px) {
   .cards {
     grid-template-columns: repeat(5, 1fr);
     margin: 0 auto;
-  } */
-  /* :root {
-    --content-padding: 2%;
+    padding: 0 15px 0 15px;
+    gap: 15px;
+  } 
+  .content-title {
+    padding: 50px 0 20px 15px
   }
-} */
-
+}
